@@ -29,18 +29,18 @@ It will take approximately and hour to step through the lab.
 
 1. To create the index, first log into the AWS Administrative Console.  
 https://signin.aws.amazon.com/console
-<img src="img/login_page.jpg" alt="drawing" style="width:200px;"/>
+<img src="img/login_page.jpg" width="150"/>
 
 1. Next, make sure you are in the Virginia Region:
-<img src="img/region_select.jpg" alt="drawing" style="width:200px;"/>
+<img src="img/region_select.jpg" width="240"/>
 
 1. Type Kendra into the Service Finder list and go into the Kendra Console
-<img src="img/find_kendra.png" alt="drawing" style="width:340px;"/>
+<img src="img/find_kendra.png" width="340"/>
 <br>This will launch you into the Kendra Administrative Console.  A direct link to this is also:
 https://console.aws.amazon.com/kendra/home?region=us-east-1 <br/>
-<img src="img/kendra_console.png" alt="drawing" style="width:340px;"/>
+<img src="img/kendra_console.png" width="400"/>
 4. Select the <Create Index> button to create a new index<br/>
-<img src="img/create_index_button.png" alt="drawing" style="width:150px;"/><br/>
+<img src="img/create_index_button.png"  width="100"/><br/>
 This will step through creating the index.
 5.Enter the following fields
   - Index Name: hands-on-tutorial
@@ -118,7 +118,7 @@ https://docs.aws.amazon.com/kendra/latest/dg/searching-example.html
 https://docs.aws.amazon.com/kendra/latest/dg/deploying.html
 
 1. Select the "Search Console" option in the menu on the left:<br/>
-<img src="img/search_console.png" alt="drawing" style="width:150px;"/><br/>
+<img src="img/search_console.png" width="150"/><br/>
 We can now search for various information from the well architected whitepaper and corresponding lens papers.
 1. Let's start w/ the following query:
 > What is the well architected framwork?

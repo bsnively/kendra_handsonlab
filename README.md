@@ -31,10 +31,10 @@ It will take approximately and hour to step through the lab.
 https://signin.aws.amazon.com/console
 <img src="img/login_page.jpg" width="250"/>
 
-1. Next, make sure you are in the Virginia Region:
+2. Next, make sure you are in the Virginia Region:
 <img src="img/region_select.jpg" width="250"/>
 
-1. Type Kendra into the Service Finder list and go into the Kendra Console
+3. Type Kendra into the Service Finder list and go into the Kendra Console
 <img src="img/find_kendra.png" width="400"/>
 <br>This will launch you into the Kendra Administrative Console.  A direct link to this is also:
 https://console.aws.amazon.com/kendra/home?region=us-east-1 <br/>
@@ -52,7 +52,7 @@ This will step through creating the index.
 
   Select the Next Button
   <img src="img/new_index_form.png" width="500"/>
-1. Confirm the default "Developer edition" is selected and hit "Create"
+6. Confirm the default "Developer edition" is selected and hit "Create"
 
 ---
 
@@ -67,15 +67,15 @@ Let's setup a connector to S3 now to ingest the Well Architected whitepapers.
 1. If you aren't already in the Index details page, select the index name and launch into it's details.<br/>
 <img src="img/index_details.jpg" width="500"/>
 
-1. Select the Data sources option under Data Management<br/>
+2. Select the Data sources option under Data Management<br/>
 <img src="img/data_sources.png" width="150"/><br/>
 You can see a list of various data connectors here.
 
-1. Select the "Add connector" under Amazon S3.
+3. Select the "Add connector" under Amazon S3.
 
-1. Under the Data Source name, enter: "Well-architected-whitepapers" and select Next
+4. Under the Data Source name, enter: "Well-architected-whitepapers" and select Next
 
-1. In the Configure S3 connector section, enter:
+5. In the Configure S3 connector section, enter:
   - Enter the data source location: _s3://serverless-analytics_
   - Select the IAM role you created earlier: _AmazonKendra-us-east-1-hands-on-tutorial_<br/>**Expand "Additional Configuration - optional"**
   - Enter the "Include Patterns": _well-architected/documents/_
@@ -84,11 +84,11 @@ You can see a list of various data connectors here.
   - Select "Next"<br/>
   <img src="img/configure_connector.png" width="500"/>
 
-1. Select "Next"
+6. Select "Next"
 
-1. Select "Create"
+7. Select "Create"
 
-1. After it's created, select the "Sync now" button<br/>
+8. After it's created, select the "Sync now" button<br/>
   <img src="img/sync_now.png" width="250"/><br/>
   This will start the process of crawling and indexing the content the connector finds, as long as the IAM Role allows it to:
   <img src="img/syncing_first_time.png" width="500"/><br/>
@@ -105,13 +105,13 @@ You can see a list of various data connectors here.
 
 1. Under Data Management, select "FAQs"<br/>
   <img src="img/faqs_selected.png" alt="drawing" style="width:100px;"/><br/>
-1. Select the "Add FAQ" Button<br/>
+2. Select the "Add FAQ" Button<br/>
    This will let you enter new FAQs in the index to compliment your other data sources.  We'll see how these results are returned shortly.
-1. Enter the following Configuration
+3. Enter the following Configuration
    - FAQ name: _well-architected-faqs_
    - S3: _s3://serverless-analytics/well-architected/faqs/wellarchtected_faq.csv_
    - Select the IAM role you created earlier: _AmazonKendra-us-east-1-hands-on-tutorial_
-1. Select "Add", the page should look like this:<br/>
+4. Select "Add", the page should look like this:<br/>
 <img src="img/faq_config.png" alt="drawing" style="width:400px;"/>
 
 ---
@@ -129,7 +129,7 @@ https://docs.aws.amazon.com/kendra/latest/dg/deploying.html
 1. Select the "Search Console" option in the menu on the left:<br/>
 <img src="img/search_console.png" width="150"/><br/>
 We can now search for various information from the well architected whitepaper and corresponding lens papers.
-1. Let's start w/ the following query:
+2. Let's start w/ the following query:
 > What is the well architected framwork?
 
 We can see a suggested answer on the top of the page<br/>
@@ -139,13 +139,13 @@ We can also see a section returning from the FAQ data source below that. We'll l
 
 Let's do another query though:
 
-1. Let's query a bit more detail on well-architected.
+3. Let's query a bit more detail on well-architected.
 > What are the well architected pillars?
 
 We can see again the direct answer it pulled from the indexed whitepapers along w/ the answer from the FAQ data source:<br/>
 <img src="img/wellarchitectedpillars.png" alt="drawing" style="width:500px;"/><br/>
 
-1. Let's now search a bit about IoT deployments:
+4. Let's now search a bit about IoT deployments:
 >  How do I perform IoT deployments?
 
 <img src="img/iot_deployments.png" alt="drawing" style="width:500px;"/><br/>

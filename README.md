@@ -39,9 +39,11 @@ https://signin.aws.amazon.com/console
 <br>This will launch you into the Kendra Administrative Console.  A direct link to this is also:
 https://console.aws.amazon.com/kendra/home?region=us-east-1 <br/>
 <img src="img/kendra_console.png" width="500"/>
+
 4. Select the <Create Index> button to create a new index<br/>
 <img src="img/create_index_button.png" width="100"/><br/>
 This will step through creating the index.
+
 5. Enter the following fields
   - Index Name: hands-on-tutorial
   - Description: < leave blank >
@@ -64,11 +66,15 @@ Let's setup a connector to S3 now to ingest the Well Architected whitepapers.
 
 1. If you aren't already in the Index details page, select the index name and launch into it's details.<br/>
 <img src="img/index_details.jpg" width="500"/>
+
 1. Select the Data sources option under Data Management<br/>
 <img src="img/data_sources.png" width="150"/><br/>
 You can see a list of various data connectors here.
+
 1. Select the "Add connector" under Amazon S3.
+
 1. Under the Data Source name, enter: "Well-architected-whitepapers" and select Next
+
 1. In the Configure S3 connector section, enter:
   - Enter the data source location: _s3://serverless-analytics_
   - Select the IAM role you created earlier: _AmazonKendra-us-east-1-hands-on-tutorial_<br/>**Expand "Additional Configuration - optional"**
@@ -77,8 +83,11 @@ You can see a list of various data connectors here.
   - Frequency: "Run on Demand"
   - Select "Next"<br/>
   <img src="img/configure_connector.png" width="500"/>
+
 1. Select "Next"
+
 1. Select "Create"
+
 1. After it's created, select the "Sync now" button<br/>
   <img src="img/sync_now.png" width="250"/><br/>
   This will start the process of crawling and indexing the content the connector finds, as long as the IAM Role allows it to:

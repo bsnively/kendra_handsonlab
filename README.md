@@ -42,7 +42,7 @@ https://console.aws.amazon.com/kendra/home?region=us-east-1 <br/>
 4. Select the <Create Index> button to create a new index<br/>
 <img src="img/create_index_button.png" width="100"/><br/>
 This will step through creating the index.
-5.Enter the following fields
+5. Enter the following fields
   - Index Name: hands-on-tutorial
   - Description: < leave blank >
   - IAM Role: Create a new Role

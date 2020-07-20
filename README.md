@@ -29,18 +29,18 @@ It will take approximately and hour to step through the lab.
 
 1. To create the index, first log into the AWS Administrative Console.  
 https://signin.aws.amazon.com/console
-<img src="img/login_page.jpg" width="150"/>
+<img src="img/login_page.jpg" width="250"/>
 
 1. Next, make sure you are in the Virginia Region:
-<img src="img/region_select.jpg" width="240"/>
+<img src="img/region_select.jpg" width="250"/>
 
 1. Type Kendra into the Service Finder list and go into the Kendra Console
-<img src="img/find_kendra.png" width="340"/>
+<img src="img/find_kendra.png" width="400"/>
 <br>This will launch you into the Kendra Administrative Console.  A direct link to this is also:
 https://console.aws.amazon.com/kendra/home?region=us-east-1 <br/>
-<img src="img/kendra_console.png" width="400"/>
+<img src="img/kendra_console.png" width="500"/>
 4. Select the <Create Index> button to create a new index<br/>
-<img src="img/create_index_button.png"  width="100"/><br/>
+<img src="img/create_index_button.png" width="100"/><br/>
 This will step through creating the index.
 5.Enter the following fields
   - Index Name: hands-on-tutorial
@@ -49,7 +49,7 @@ This will step through creating the index.
   - Role Name: AmazonKendra-us-east-1-hands-on-tutorial
 
   Select the Next Button
-  <img src="img/new_index_form.png" alt="drawing" style="width:300px;"/>
+  <img src="img/new_index_form.png" width="500"/>
 1. Confirm the default "Developer edition" is selected and hit "Create"
 
 ---
@@ -63,9 +63,9 @@ Use Kendra's connectors for popular sources like S3, SharePoint, Salesforce, Ser
 Let's setup a connector to S3 now to ingest the Well Architected whitepapers.
 
 1. If you aren't already in the Index details page, select the index name and launch into it's details.<br/>
-<img src="img/index_details.jpg" alt="drawing" style="width:500px;"/>
+<img src="img/index_details.jpg" width="500"/>
 1. Select the Data sources option under Data Management<br/>
-<img src="img/data_sources.png" alt="drawing" style="width:150px;"/><br/>
+<img src="img/data_sources.png" width="150"/><br/>
 You can see a list of various data connectors here.
 1. Select the "Add connector" under Amazon S3.
 1. Under the Data Source name, enter: "Well-architected-whitepapers" and select Next
@@ -76,15 +76,15 @@ You can see a list of various data connectors here.
   - Select "Add"
   - Frequency: "Run on Demand"
   - Select "Next"<br/>
-  <img src="img/configure_connector.png" alt="drawing" style="width:350px;"/>
+  <img src="img/configure_connector.png" width="500"/>
 1. Select "Next"
 1. Select "Create"
 1. After it's created, select the "Sync now" button<br/>
-  <img src="img/sync_now.png" alt="drawing" style="width:150px;"/><br/>
+  <img src="img/sync_now.png" width="250"/><br/>
   This will start the process of crawling and indexing the content the connector finds, as long as the IAM Role allows it to:
-  <img src="img/syncing_first_time.png" alt="drawing" style="width:500px;"/><br/>
+  <img src="img/syncing_first_time.png" width="500"/><br/>
   This will run and index the whitepapers at that location:<br/>
-  <img src="img/syncing_first_time_done.png" alt="drawing" style="width:500px;"/><br/>
+  <img src="img/syncing_first_time_done.png" width="500"/><br/>
 
   ---
 

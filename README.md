@@ -52,6 +52,7 @@ This will step through creating the index.
 
   Select the Next Button
   <img src="img/new_index_form.png" width="500"/>
+
 6. Confirm the default "Developer edition" is selected and hit "Create"
 
 ---
